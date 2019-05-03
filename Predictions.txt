@@ -1,0 +1,489 @@
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=train_dataset/Goku/59.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-02 15:18:15.775156: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.232s
+
+goku (score=0.99997)
+ (score=0.00003)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=train_dataset/Goku/59.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-02 15:19:10.897076: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.230s
+
+goku (score=0.99997)
+vegeta (score=0.00003)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=train_dataset/Vegeta/V6.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-02 15:20:03.874251: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.225s
+
+vegeta (score=1.00000)
+goku (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=train_dataset/Vegeta/V47.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-02 15:20:24.937473: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.224s
+
+vegeta (score=0.99995)
+goku (score=0.00005)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/goku1.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:22:23.568133: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+2019-05-03 11:22:23.596493: W T:\src\github\tensorflow\tensorflow\core\framework\op_kernel.cc:1273] OP_REQUIRES failed at whole_file_read_ops.cc:114 : Not found: NewRandomAccessFile failed to Create/Open: test_dataset/goku1.jpg : The system cannot find the file specified.
+; No such file or directory
+2019-05-03 11:22:23.607660: W T:\src\github\tensorflow\tensorflow\core\framework\op_kernel.cc:1273] OP_REQUIRES failed at whole_file_read_ops.cc:114 : Not found: NewRandomAccessFile failed to Create/Open: test_dataset/goku1.jpg : The system cannot find the file specified.
+; No such file or directory
+Traceback (most recent call last):
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1327, in _do_call
+    return fn(*args)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1312, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1420, in _call_tf_sessionrun
+    status, run_metadata)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\framework\errors_impl.py", line 516, in __exit__
+    c_api.TF_GetCode(self.status.status))
+tensorflow.python.framework.errors_impl.NotFoundError: NewRandomAccessFile failed to Create/Open: test_dataset/goku1.jpg : The system cannot find the file specified.
+; No such file or directory
+         [[Node: file_reader = ReadFile[_device="/job:localhost/replica:0/task:0/device:CPU:0"](file_reader/filename)]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ihrishi\Anaconda3\lib\runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "C:\Users\ihrishi\Anaconda3\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2\scripts\label_image.py", line 117, in <module>
+    input_std=input_std)
+  File "C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2\scripts\label_image.py", line 59, in read_tensor_from_image_file
+    result = sess.run(normalized)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 905, in run
+    run_metadata_ptr)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1140, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1321, in _do_run
+    run_metadata)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1340, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.NotFoundError: NewRandomAccessFile failed to Create/Open: test_dataset/goku1.jpg : The system cannot find the file specified.
+; No such file or directory
+         [[Node: file_reader = ReadFile[_device="/job:localhost/replica:0/task:0/device:CPU:0"](file_reader/filename)]]
+
+Caused by op 'file_reader', defined at:
+  File "C:\Users\ihrishi\Anaconda3\lib\runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "C:\Users\ihrishi\Anaconda3\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2\scripts\label_image.py", line 117, in <module>
+    input_std=input_std)
+  File "C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2\scripts\label_image.py", line 42, in read_tensor_from_image_file
+    file_reader = tf.read_file(file_name, input_name)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\ops\gen_io_ops.py", line 551, in read_file
+    "ReadFile", filename=filename, name=name)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\framework\op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\framework\ops.py", line 3290, in create_op
+    op_def=op_def)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\framework\ops.py", line 1654, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+NotFoundError (see above for traceback): NewRandomAccessFile failed to Create/Open: test_dataset/goku1.jpg : The system cannot find the file specified.
+; No such file or directory
+         [[Node: file_reader = ReadFile[_device="/job:localhost/replica:0/task:0/device:CPU:0"](file_reader/filename)]]
+
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/goku1.png
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:23:07.536993: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.247s
+
+goku (score=1.00000)
+vegeta (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/goku2.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:23:27.442237: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.236s
+
+vegeta (score=0.96665)
+goku (score=0.03335)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/goku3.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:23:52.681998: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.224s
+
+goku (score=0.99997)
+vegeta (score=0.00003)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/goku4.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:23:59.381232: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.224s
+
+goku (score=0.99825)
+vegeta (score=0.00175)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/goku5.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:24:06.963744: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.232s
+
+goku (score=0.89638)
+vegeta (score=0.10362)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/goku6.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:24:16.061327: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.228s
+
+goku (score=1.00000)
+vegeta (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/goku7.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:24:23.683582: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.228s
+
+vegeta (score=1.00000)
+goku (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/goku8.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:28:52.984399: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.227s
+
+goku (score=0.99988)
+vegeta (score=0.00012)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/goku9.png
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:29:10.644388: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.232s
+
+goku (score=0.54346)
+vegeta (score=0.45654)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/goku10.png
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:29:25.419280: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.224s
+
+goku (score=1.00000)
+vegeta (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/goku11.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:29:36.252426: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.220s
+
+goku (score=1.00000)
+vegeta (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/gogeta1.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:30:10.397491: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.227s
+
+vegeta (score=1.00000)
+goku (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/gogeta2.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:30:21.397978: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.227s
+
+goku (score=0.51282)
+vegeta (score=0.48718)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/gogeta3.png
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:30:35.669133: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.236s
+
+vegeta (score=0.99991)
+goku (score=0.00009)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/gogeta4.png
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:30:48.017781: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.223s
+
+vegeta (score=0.69980)
+goku (score=0.30020)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/gohan1.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:31:09.839595: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.224s
+
+goku (score=1.00000)
+vegeta (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/gohan2.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:31:19.925428: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.224s
+
+goku (score=0.69088)
+vegeta (score=0.30912)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeta1.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:32:35.238616: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.224s
+
+vegeta (score=0.69772)
+goku (score=0.30228)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeta2.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:32:42.953289: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.220s
+
+vegeta (score=0.99999)
+goku (score=0.00001)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeta3.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:32:54.347581: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.226s
+
+goku (score=0.83982)
+vegeta (score=0.16018)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeta4.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:33:21.817454: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.228s
+
+goku (score=1.00000)
+vegeta (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeta5.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:33:34.250439: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.224s
+
+vegeta (score=0.99866)
+goku (score=0.00134)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeta6.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:33:48.799928: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.223s
+
+vegeta (score=1.00000)
+goku (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeta7.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:34:00.226668: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.224s
+
+vegeta (score=0.95075)
+goku (score=0.04925)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeta8.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:34:31.762018: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.226s
+
+vegeta (score=1.00000)
+goku (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeta9.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:34:45.449728: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.224s
+
+vegeta (score=1.00000)
+goku (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeta10.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:34:53.209544: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.220s
+
+goku (score=0.95284)
+vegeta (score=0.04716)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeto1.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:35:23.876131: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+Traceback (most recent call last):
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1327, in _do_call
+    return fn(*args)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1312, in _run_fn
+    options, feed_dict, fetch_list, target_list, run_metadata)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1420, in _call_tf_sessionrun
+    status, run_metadata)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\framework\errors_impl.py", line 516, in __exit__
+    c_api.TF_GetCode(self.status.status))
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Expected image (JPEG, PNG, or GIF), got unknown format starting with 'RIFF\016\324\000\000WEBPVP8 '
+         [[Node: jpeg_reader = DecodeJpeg[acceptable_fraction=1, channels=3, dct_method="", fancy_upscaling=true, ratio=1, try_recover_truncated=false, _device="/job:localhost/replica:0/task:0/device:CPU:0"](file_reader)]]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ihrishi\Anaconda3\lib\runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "C:\Users\ihrishi\Anaconda3\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2\scripts\label_image.py", line 117, in <module>
+    input_std=input_std)
+  File "C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2\scripts\label_image.py", line 59, in read_tensor_from_image_file
+    result = sess.run(normalized)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 905, in run
+    run_metadata_ptr)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1140, in _run
+    feed_dict_tensor, options, run_metadata)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1321, in _do_run
+    run_metadata)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\client\session.py", line 1340, in _do_call
+    raise type(e)(node_def, op, message)
+tensorflow.python.framework.errors_impl.InvalidArgumentError: Expected image (JPEG, PNG, or GIF), got unknown format starting with 'RIFF\016\324\000\000WEBPVP8 '
+         [[Node: jpeg_reader = DecodeJpeg[acceptable_fraction=1, channels=3, dct_method="", fancy_upscaling=true, ratio=1, try_recover_truncated=false, _device="/job:localhost/replica:0/task:0/device:CPU:0"](file_reader)]]
+
+Caused by op 'jpeg_reader', defined at:
+  File "C:\Users\ihrishi\Anaconda3\lib\runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "C:\Users\ihrishi\Anaconda3\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2\scripts\label_image.py", line 117, in <module>
+    input_std=input_std)
+  File "C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2\scripts\label_image.py", line 53, in read_tensor_from_image_file
+    name='jpeg_reader')
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\ops\gen_image_ops.py", line 1074, in decode_jpeg
+    name=name)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\framework\op_def_library.py", line 787, in _apply_op_helper
+    op_def=op_def)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\framework\ops.py", line 3290, in create_op
+    op_def=op_def)
+  File "C:\Users\ihrishi\Anaconda3\lib\site-packages\tensorflow\python\framework\ops.py", line 1654, in __init__
+    self._traceback = self._graph._extract_stack()  # pylint: disable=protected-access
+
+InvalidArgumentError (see above for traceback): Expected image (JPEG, PNG, or GIF), got unknown format starting with 'RIFF\016\324\000\000WEBPVP8 '
+         [[Node: jpeg_reader = DecodeJpeg[acceptable_fraction=1, channels=3, dct_method="", fancy_upscaling=true, ratio=1, try_recover_truncated=false, _device="/job:localhost/replica:0/task:0/device:CPU:0"](file_reader)]]
+
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeto2.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:35:31.971912: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.227s
+
+goku (score=0.99975)
+vegeta (score=0.00025)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/vegeto3.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:35:42.221383: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.224s
+
+goku (score=1.00000)
+vegeta (score=0.00000)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/jordan1.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:36:40.861023: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.232s
+
+vegeta (score=0.99991)
+goku (score=0.00009)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>python -m scripts.label_image --graph=tf_files/retrained_graph.pb --image=test_dataset/jordan2.jpg
+C:\Users\ihrishi\Anaconda3\lib\site-packages\h5py\__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2019-05-03 11:36:48.943714: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
+
+Evaluation time (1-image): 0.220s
+
+vegeta (score=0.99949)
+goku (score=0.00051)
+
+C:\Users\ihrishi\Desktop\files\tensorflow-for-poets-2>
+
+
+
+
+
+
+
+
+
+
+
