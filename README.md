@@ -2,7 +2,7 @@
 
 This repo contains modified code from the "TensorFlow for poets 2" series of codelabs.
 
-This repo contains simplified and trimmed down version of tensorflow's example image classification apps for clssifying Goku and Vegeta from Dragon Ball Z.
+This repo contains simplified and trimmed down version of tensorflow's example image classification apps for clasifying Goku and Vegeta from Dragon Ball Z.
 
 Feel free to use the dataset for training your models
 
